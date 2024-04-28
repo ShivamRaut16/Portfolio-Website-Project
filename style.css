@@ -1,0 +1,678 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Dancing+Script:wght@400..700&family=Laila:wght@300;400;500;600;700&family=Lugrasimo&display=swap');/* Navigation Bar */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Days+One&family=Sixtyfour&display=swap');
+body {
+  margin: 20px 20px 20px 40px;/* Added margin from top */
+    font-family: "Laila", serif;
+    background-color: rgb(255, 255, 255);
+    /* font-style: normal; */
+  
+}
+
+
+/* CSS for logo */
+
+/* CSS for navbar */
+.navbar {
+  background-color: #1a1a1a; /* Dark background */
+  display: flex;
+  justify-content: space-between; /* Align content to the left and right */
+  align-items: center;
+  padding: 20px 40px; /* Increased padding */
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added box-shadow for depth */
+  margin-bottom: 20px; /* Added margin */
+  transition: box-shadow 0.3s; /* Smooth transition for box-shadow */
+}
+
+.logo {
+  font-family: "Days One", sans-serif;
+  font-size: 18px; /* Reduced font size */
+  font-weight: 400;
+  font-style: normal;
+  color: #ffa500; /* White color */
+  padding: 5px 10px; /* Reduced padding */
+  border-radius: 5px; /* Reduced border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  text-align: left;
+}
+
+
+.logo-link {
+  text-decoration: none; /* Remove default link underline */
+}
+
+.features a {
+  color: #fff; /* White text */
+  text-decoration: none;
+  margin-left: 30px; /* Increased margin */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.features a:hover {
+  color: #ffa500; /* Orange on hover */
+}
+
+.special-button button {
+  background-color: #ffa500; /* Orange button */
+  color: #fff; /* White text */
+  border: none;
+  padding: 12px 30px; /* Increase padding for better clickability */
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  outline: none;
+  font-family: "Alice", serif; /* Change font */
+  font-weight: bold; /* Make font bold */
+  text-transform: uppercase; /* Convert text to uppercase */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add 3D effect with box shadow */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.special-button button:hover {
+  background-color: #ff8c00; /* Darker orange on hover */
+  transform: translateY(-2px) scale(1.05); /* Add a slight lift effect and scale on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhance 3D effect on hover */
+}
+
+
+/* Hover effects */
+.navbar:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Enhanced box-shadow on hover */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Scale logo on hover */
+}
+
+.features a:hover {
+    color: #ffa500; /* Orange text on hover */
+}
+
+.special-button button:hover {
+    background-color: #555; /* Darker grey button on hover */
+}
+
+
+/* 
+
+
+
+*/
+
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  background-color: orange;
+}
+
+.section-heading {
+  text-align: center;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  animation: moveCards 10s linear infinite;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: grey;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2,
+.card p {
+  text-align: center;
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #ff9800;
+  transform: translateY(-3px);
+}
+
+@keyframes moveCards {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+   /* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  } */
+  
+/* Increase font size for h1 */
+.hero-content h1 {
+  font-size: 36px; /* Adjust font size as needed */
+}
+
+/* Increase font size for p */
+.hero-content p {
+  font-size: 24px; /* Adjust font size as needed */
+}
+  .social-media-icons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-media-icons a:hover {
+    background-color: transparent;
+    color: #ff8c00;
+  }
+  
+  .social-media-icons a:hover .fab.fa-youtube {
+    color: #ff0000;
+  }
+  
+  .social-media-icons a:hover .fab.fa-linkedin-in {
+    color: #0077b5;
+  }
+  
+  .social-media-icons a:hover .fab.fa-instagram {
+    color: #e4405f;
+  }
+  
+  .social-media-icons a:hover .fab.fa-twitter {
+    color: #1da1f2;
+  }
+  
+  .social-media-icons a:hover .fab.fa-telegram-plane {
+    color: #0088cc;
+  }
+  
+  .social-media-icons a:hover .fab.fa-behance {
+    color: #1769ff;
+  }
+  
+  .social-media-icons a:hover .fab.fa-dribbble {
+    color: #e4405f;
+  }
+
+  .social-media-icons a:hover .fab.fa-medium {
+    color: #333;
+  }
+  
+  .social-media-icons a:hover .fab.fa-github {
+    color: #333;
+  }
+  
+  .hero {
+    background-image: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .profile-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  .content-container {
+    flex: 1;
+    position: relative;
+  }
+  
+  .hero-content {
+    margin-bottom: 20px;
+  }
+  
+  .social-media-icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5px;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-icons li a:hover {
+    background-color: transparent;
+    color: #ff8c00;
+  }
+  
+  .btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 40px;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding: 50px 20px;
+    }
+  
+    .profile-container {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+  
+    .content-container {
+      text-align: center;
+    }
+  
+    .social-media-icons {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+/* About Section */
+.about {
+  background-color: #ffa500; /* Orange background */
+  color: #1a1a1a; /* Black text */
+  padding: 50px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Section */
+.skills {
+  background-color: #6b5b95;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills h2 {
+  margin: 0 auto; /* Center the heading */
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.card {
+  min-width: 250px;
+  flex: 0 0 auto;
+}
+
+/* Add your existing card styles here */
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card h2 {
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8c00;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.card button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.card button:hover::before {
+  width: 100%;
+}
+
+.card:hover button {
+  background-color: #ffaf49;
+}
+
+
+/* Contact Section */
+
+.contact {
+  background-color: #f0f0f0; /* Light grey background */
+  color: #1a1a1a; /* Black text */
+  padding: 50px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 40px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: calc(100% - 20px); /* Adjusting for padding */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Adding border for input fields */
+  background-color: #fff; /* White background */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  font-family: "Arial", sans-serif; /* Change font family */
+  color: #555; /* Change text color */
+}
+
+.contact input[type="text"]::placeholder,
+.contact input[type="email"]::placeholder,
+.contact textarea::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+  border-color: #ffa500; /* Orange border color on focus */
+}
+
+.contact textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.contact button[type="submit"] {
+  font-family: "Alice", serif; /* Change font */
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  border: none;
+  border-radius: 5px;
+  background-color: #ffa500; /* Orange button */
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Added transition for smoothness */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 3D effect with box-shadow */
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #ff7c00; /* Darker orange on hover */
+  transform: translateY(-2px); /* Move button up on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+.email-info {
+ color: #ffffff;
+}
+
+  /* Footer */
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.footer .social-media,
+.footer .newsletter,
+.footer .email-info {
+  flex-basis: 30%; /* Each section takes 30% width on larger screens */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer .social-media h2,
+.footer .newsletter h2 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.footer .social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer .social-icons li:last-child {
+  margin-right: 0;
+}
+
+.footer .social-icons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ff8c00;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer .social-icons li a:hover {
+  background-color: #ffaf49;
+}
+
+.footer input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 200px; /* Fixed width */
+}
+
+.footer button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8c00;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Alice", serif;
+  width: 200px; /* Fixed width */
+}
+
+.footer button[type="submit"]:hover {
+  background-color: #ffaf49;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .footer .social-media,
+  .footer .newsletter,
+  .footer .email-info {
+    flex-basis: 100%; /* Each section takes 100% width on smaller screens */
+    margin-right: 0;
+  }
+}
+
+.email-link {
+  color: orange;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.credit p{
+  align-items: center;
+  text-align: center;
+  margin-top: 10px; /* Adjust margin as needed */
+  font-size: 14px;
+  color: #ff8c00; /* Adjust color as needed */
+  text-shadow: #1a1a1a;
+
+}
+
+    .social-icons li a:hover {
+      background-color: transparent; /* Reset background color */
+      color: #ff8c00; /* Reset text color */
+    }
+    
+    .social-icons li a:hover:hover .fab.fa-youtube {
+      color: #ff0000; /* YouTube brand color */
+    }
+    
+    .social-icons li a:hover:hover .fab.fa-linkedin-in {
+      color: #0077b5; /* LinkedIn brand color */
+    }
+    
+    .social-icons li a:hover:hover .fab.fa-instagram {
+      color: #e4405f; /* Instagram brand color */
+    }
+    
+    .social-icons li a:hover:hover .fab.fa-twitter {
+      color: #1da1f2; /* Twitter brand color */
+    }
+    
+    .social-icons li a:hover:hover .fab.fa-telegram-plane {
+      color: #0088cc; /* Telegram brand color */
+    }
+    
+    .social-icons li a:hover:hover .fab.fa-behance {
+      color: #1769ff; /* Behance brand color */
+    }
+    
+    .social-icons li a:hover:hover .fab .fa-dribbble {
+      color: #e4405f; /* dribbble brand color */
+    }
+    .social-icons li a:hover:hover .fab .fa-medium {
+      color: #333; /* medium brand color */
+    }
+  
+    .social-icons li a:hover:hover .fab.fa-github {
+      color: #333; /* GitHub brand color */
+    }
+    
